@@ -1,0 +1,38 @@
+my-sql:
+  credentials:
+    username: root
+    password: root
+  name: hamster
+  host: 127.0.0.1
+  port: 3306
+  pool-size: 3
+
+max-taps: 10000000
+max-level: 50
+
+messages:
+  no-find-extension-command: "§4Ошибка! §7Дополнение команды не найдено."
+  hamster-command:
+    leader-board:
+      invalid-sort-type: "§4Ошибка! §7Неверный тип сортировки."
+      invalid-usage: "§4Ошибка! §7Неверное использование команды. /hamster leaderboard <тип>."
+      header-board: "\n§7Список лидеров по параметру: §6%parameter%\n"
+      leader-row: "   · §8#§6%leader_index% §7%leader_username% §8- §6%leader_data%\n"
+    open-gui:
+      no-registered: "§4Ошибка! §7Вам нужна регистрация для открытия меню: §6/hamster register"
+    register:
+      success: "§2Успешно! §7Вы зарегистрированы!"
+      already: "§4Ошибка! §7Вы уже зарегистрированы!"
+      invalid-referal-code: "§4Ошибка! §7Неверный реферальный код."
+      ambassador-success: "§6Уведомление. §7%referal_name% §8зарегистрировался по вашему реферальному коду."
+  gui:
+    header: "§eХамяк Скоро Листинг (Не точно)"
+    referal-code: "§2Ваш код: §6%referal_code%"
+    click-wool-green: "§aкликай!"
+    click-wool-red: "§cне сюда!"
+    statistic-header: "§2Статистика:"
+    statistic-taps: "   · §7Всего тапов: §6%taps_count%\n"
+    statistic-coins: "   · §7Всего коинов: §6%coins_count%\n"
+    statistic-referals: "   · §7Рефералов: §6%referals_count%\n"
+    statistic-level: "   · §7Уровень: §6%level%\n"
+    statistic-need-to-next-level: "   · §7До §6%next_level% §7уровня: §6%next_level_taps_need% §7тапов\n"

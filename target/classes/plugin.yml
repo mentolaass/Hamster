@@ -1,0 +1,6 @@
+name: Hamster
+version: '1.0'
+main: ru.mentola.hamster.Hamster
+api-version: '1.20'
+commands:
+  hamster:
